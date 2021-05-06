@@ -1,32 +1,52 @@
 baseURL = "http://machinly.cn/"
-languageCode = "en-us"
+languageCode = "en"
 title = "Machinly's Site"
+enableEmoji = true
+theme = "hugo-coder"
 
 [params] # theme parameters
-    author = "Machinly"
-    info = "Full Stack Engineer And Investor"
-    description = "Machinly's personal website" # site description
-    keywords = "blog,developer,investor" # site keywords
-
-hideCredits = false
+author = "Machinly"
+avatarURL = "images/avatar.jpg"
+info = "Full Stack Engineer And Investor"
+description = "Machinly's personal website" # site description
+keywords = "blog,developer,investor" # site keywords
+footerContent = '<a href="https://beian.miit.gov.cn/" target="_blank">京ICP备17004021号</a>'
+hideCredits = true
 hideCopyright = false
+since = 2020
+commit = "https://github.com/machinly/blog"
+colorScheme = "auto"
 
 # Social links
 [[params.social]]
-    name = "Github"
-    weight = 1
-    url = "https://github.com/machinly/"
+name = "Github"
+icon = "fa fa-github"
+weight = 1
+url = "https://github.com/machinly/"
+
 [[params.social]]
-    name = "Twitter"
-    weight = 2
-    url = "https://twitter.com/machinly/"
+name = "Twitter"
+weight = 2
+icon = "fa fa-twitter"
+url = "https://twitter.com/machinly/"
+
+[[params.social]]
+name = "RSS"
+icon = "fa fa-rss"
+weight = 3
+url = "https://machinly.cn/index.xml"
+rel = "alternate"
+type = "application/rss+xml"
+
 
 # Menu links
 [[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "/posts/"
+name = "Posts"
+weight = 1
+url  = "posts/"
+
+
 [[menu.main]]
-    name = "About"
-    weight = 2
-    url = "/about/"
+name = "About"
+weight = 2
+url = "about/"
